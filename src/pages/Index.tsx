@@ -235,15 +235,14 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: "Clock", label: "Время", desc: "Как мы проживаем каждый момент" },
-              { icon: "Compass", label: "Свобода", desc: "Выбор как основа личности" },
-              { icon: "Eye", label: "Осознанность", desc: "Присутствие здесь и сейчас" },
-              { icon: "Heart", label: "Смысл", desc: "Зачем мы живём" },
+              { img: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/de96ddac-fe93-4099-b6b6-fe400ac26a15.jpg", label: "Философия", desc: "Умозрительные построения о природе мира и бытия" },
+              { img: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/3a0b83cf-2719-4eea-ba1b-8a481520987e.jpg", label: "Логика", desc: "Структуры и закономерности, управляющие реальностью" },
+              { img: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/b72f333e-a0d0-4e12-ba82-70ae373e35e4.jpg", label: "Саморазвитие", desc: "Новые идеи для личностного и духовного роста" },
             ].map(item => (
-              <div key={item.label} className="border border-border/60 p-6 hover:border-gold/40 transition-colors duration-300">
-                <Icon name={item.icon} size={20} className="text-gold mb-4" />
+              <div key={item.label} className="border border-border/60 p-6 hover:border-gold/40 transition-colors duration-300 flex flex-col items-center text-center">
+                <img src={item.img} alt={item.label} className="w-16 h-16 object-cover rounded-md mb-4" />
                 <h3 className="font-cormorant text-xl text-foreground mb-2">{item.label}</h3>
                 <p className="font-ibm text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
               </div>
