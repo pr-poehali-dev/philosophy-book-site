@@ -7,7 +7,6 @@ const LOGO_IMAGE = "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-124
 const navLinks = [
   { href: "#about", label: "О книге" },
   { href: "#author", label: "Об авторе" },
-  { href: "#news", label: "Новости" },
   { href: "#gallery", label: "Галерея" },
   { href: "#buy", label: "Купить" },
   { href: "#reviews", label: "Отзывы" },
@@ -296,36 +295,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* NEWS */}
-      <section id="news" className="py-14">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="section-divider mb-16" />
-          <div className="mb-12">
-            <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">Новости</p>
-            <h2 className="font-cormorant text-4xl md:text-5xl font-light text-foreground">
-              Последние события
-            </h2>
-          </div>
-          <div className="space-y-0">
-            {news.map((item, i) => (
-              <div
-                key={i}
-                className="grid md:grid-cols-4 gap-6 py-8 border-b border-border/40 hover:border-gold/20 transition-colors duration-300 group"
-              >
-                <div>
-                  <p className="font-ibm text-xs text-gold/70 uppercase tracking-wider">{item.date}</p>
-                </div>
-                <div className="md:col-span-3">
-                  <h3 className="font-cormorant text-2xl text-foreground group-hover:text-gold transition-colors duration-300 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="font-ibm text-sm text-muted-foreground leading-relaxed">{item.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* GALLERY */}
       <section id="gallery" className="py-14 bg-card/40">
