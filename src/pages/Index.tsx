@@ -36,7 +36,6 @@ const galleryItems = [
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/79ae929b-c7a2-4fe4-8676-e06d1a25c0ec.jpg", caption: "Самара" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/e56279d9-53cf-421d-93eb-ce860dd9b764.jpg", caption: "Херсонес" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/8cbfc03d-47c6-486c-8d64-92ed9b55e420.jpg", caption: "На Кавказе" },
-  { type: "video", src: "https://vkvideo.ru/video_ext.php?oid=774624619&id=456239574&hd=2", caption: "Видео о книге" },
   { type: "video", src: "https://rutube.ru/play/embed/0b6254d583712a8c59fa8480c37e5d45/", caption: "Видео на Rutube" },
 ];
 
