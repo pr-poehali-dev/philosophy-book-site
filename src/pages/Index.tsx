@@ -210,7 +210,7 @@ export default function Index() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="py-24">
+      <section id="about" className="py-14">
         <div className="max-w-6xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <div className="grid md:grid-cols-2 gap-16 items-start">
@@ -253,7 +253,7 @@ export default function Index() {
       </section>
 
       {/* AUTHOR */}
-      <section id="author" className="py-24 bg-card/40">
+      <section id="author" className="py-14 bg-card/40">
         <div className="max-w-6xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <div className="grid md:grid-cols-3 gap-12 items-start">
@@ -297,7 +297,7 @@ export default function Index() {
       </section>
 
       {/* NEWS */}
-      <section id="news" className="py-24">
+      <section id="news" className="py-14">
         <div className="max-w-6xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <div className="mb-12">
@@ -328,7 +328,7 @@ export default function Index() {
       </section>
 
       {/* GALLERY */}
-      <section id="gallery" className="py-24 bg-card/40">
+      <section id="gallery" className="py-14 bg-card/40">
         <div className="max-w-6xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">Галерея</p>
@@ -363,7 +363,7 @@ export default function Index() {
       </section>
 
       {/* BUY */}
-      <section id="buy" className="py-24">
+      <section id="buy" className="py-14">
         <div className="max-w-6xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <div className="text-center mb-16">
@@ -400,7 +400,7 @@ export default function Index() {
       </section>
 
       {/* REVIEWS */}
-      <section id="reviews" className="py-24 bg-card/40">
+      <section id="reviews" className="py-14 bg-card/40">
         <div className="max-w-6xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">Отзывы</p>
@@ -429,7 +429,7 @@ export default function Index() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-24">
+      <section id="faq" className="py-14">
         <div className="max-w-4xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">Вопросы</p>
@@ -464,7 +464,7 @@ export default function Index() {
       </section>
 
       {/* SOCIAL */}
-      <section className="py-24 bg-card/40">
+      <section className="py-14 bg-card/40">
         <div className="max-w-6xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <div className="text-center mb-12">
