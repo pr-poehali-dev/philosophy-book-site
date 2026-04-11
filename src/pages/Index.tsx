@@ -36,7 +36,7 @@ const galleryItems = [
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/79ae929b-c7a2-4fe4-8676-e06d1a25c0ec.jpg", caption: "Самара" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/e56279d9-53cf-421d-93eb-ce860dd9b764.jpg", caption: "Херсонес" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/8cbfc03d-47c6-486c-8d64-92ed9b55e420.jpg", caption: "На Кавказе" },
-  { type: "video", src: "", caption: "Видео о книге" },
+  { type: "video", src: "https://vkvideo.ru/video_ext.php?oid=774624619&id=456239574&hd=2", caption: "Видео о книге" },
 ];
 
 const reviews = [
@@ -318,14 +318,19 @@ export default function Index() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 ) : (
-                  <div className="w-full h-full flex flex-col items-center justify-center gap-3 bg-card">
-                    <Icon name="Play" size={32} className="text-gold/50" />
-                    <p className="font-ibm text-xs text-muted-foreground">Видео</p>
+                  <iframe
+                    src={item.src}
+                    className="w-full h-full"
+                    allow="encrypted-media; fullscreen; picture-in-picture"
+                    frameBorder="0"
+                    allowFullScreen
+                  />
+                )}
+                {item.type === "image" && (
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <p className="font-ibm text-xs text-foreground/90">{item.caption}</p>
                   </div>
                 )}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="font-ibm text-xs text-foreground/90">{item.caption}</p>
-                </div>
               </div>
             ))}
           </div>
