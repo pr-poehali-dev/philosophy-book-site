@@ -305,7 +305,7 @@ export default function Index() {
           <h2 className="font-cormorant text-4xl md:text-5xl font-light text-foreground mb-12">
             Фото и видео
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {galleryItems.map((item, i) => (
               <div
                 key={i}
