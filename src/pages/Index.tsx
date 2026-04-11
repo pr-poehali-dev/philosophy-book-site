@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const BOOK_IMAGE = "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/files/2f06f4de-ed5a-4fce-babc-9052adb6d1f5.jpg";
+const BOOK_IMAGE = "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/55665ac6-d0aa-462b-9549-9aef207a50cb.png";
+const LOGO_IMAGE = "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/b47dbc19-d1a3-4712-b4df-050eb240844c.jpg";
 
 const navLinks = [
   { href: "#about", label: "О книге" },
@@ -88,8 +89,12 @@ export default function Index() {
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-md bg-background/80">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-          <a href="#hero" className="font-cormorant text-xl text-gold tracking-widest uppercase">
-            Книга
+          <a href="#hero" className="flex items-center">
+            <img
+              src={LOGO_IMAGE}
+              alt="Загадка BOW"
+              className="h-10 w-10 object-cover rounded-lg"
+            />
           </a>
           <div className="hidden md:flex gap-8">
             {navLinks.map(link => (
@@ -143,11 +148,11 @@ export default function Index() {
           <div className="space-y-8">
             <div className="opacity-0 animate-fade-in delay-100" style={{ animationFillMode: "forwards" }}>
               <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-4">
-                Философская проза
+                Книга Михаила Цинклера
               </p>
               <h1 className="font-cormorant text-5xl md:text-7xl font-light leading-tight text-foreground">
-                В поисках<br />
-                <em className="text-gold italic">настоящего</em>
+                Загадка BOW.<br />
+                <em className="text-gold italic">Код мироздания</em>
               </h1>
             </div>
 
