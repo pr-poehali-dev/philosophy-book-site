@@ -260,42 +260,31 @@ export default function Index() {
           <div className="section-divider mb-16" />
           <div className="grid md:grid-cols-3 gap-12 items-start">
             <div className="md:col-span-1">
-              <div className="w-full bg-muted aspect-square flex items-center justify-center border border-border/60" style={{ maxWidth: 280 }}>
-                <Icon name="User" size={64} className="text-gold/30" />
-              </div>
-              <div className="mt-4 flex gap-3">
-                {[
-                  { icon: "Send", label: "Telegram" },
-                  { icon: "Users", label: "ВК" },
-                  { icon: "Youtube", label: "YouTube" },
-                ].map((s, i) => (
-                  <button key={i} className="p-2 border border-border/60 hover:border-gold/40 text-muted-foreground hover:text-gold transition-colors duration-300">
-                    <Icon name={s.icon} size={16} />
-                  </button>
-                ))}
-              </div>
+              <img
+                src="https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/e025f13f-134e-4b40-ad4b-387590cdd1e3.jpg"
+                alt="Цинклер Михаил Генрихович"
+                className="w-full object-cover border border-border/60"
+                style={{ maxWidth: 280, aspectRatio: "1/1", objectPosition: "center top" }}
+              />
             </div>
             <div className="md:col-span-2 space-y-6">
               <div>
                 <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">Об авторе</p>
                 <h2 className="font-cormorant text-4xl md:text-5xl font-light text-foreground">
-                  Имя Автора
+                  Цинклер Михаил Генрихович
                 </h2>
-                <p className="font-ibm text-sm text-gold/80 mt-1">Философ, писатель, лектор</p>
+                <p className="font-ibm text-sm text-gold/80 mt-1">Врач, философ, писатель</p>
               </div>
               <p className="font-ibm text-[15px] text-muted-foreground leading-relaxed">
-                Родился в 1975 году. Окончил философский факультет МГУ, защитил диссертацию по
-                экзистенциальной философии. Преподавал в нескольких российских университетах.
+                Он называет себя «гусаром от медицины», по-современному — спецназ. Так в прошлом веке называли реаниматологов. Родился в городе Калининграде. В юности с отцом, военным, объехал страну от Прибалтики до Сахалина.
               </p>
               <p className="font-ibm text-[15px] text-muted-foreground leading-relaxed">
-                Более 20 лет занимается популяризацией философии. Читает открытые лекции, ведёт
-                подкаст о смысле жизни и публикует статьи в ведущих изданиях. «В поисках настоящего» —
-                его первая книга.
+                Окончил Благовещенский государственный медицинский институт. В числе первых участвовал в становлении анестезиолого-реанимационной службы в Амурской области. Более тридцати лет работал врачом экстренной службы на Дальнем Востоке. Философия — страстное увлечение со школьной скамьи.
               </p>
               <div className="grid grid-cols-3 gap-6 pt-4">
                 {[
-                  { num: "20+", label: "лет в философии" },
-                  { num: "500+", label: "лекций" },
+                  { num: "30+", label: "лет в медицине" },
+                  { num: "ДВ", label: "Дальний Восток" },
                   { num: "1", label: "книга" },
                 ].map(stat => (
                   <div key={stat.label} className="text-center">
