@@ -283,7 +283,7 @@ export default function Index() {
               </p>
               <div className="grid grid-cols-3 gap-6 pt-4">
                 {[
-                  { num: "30+", label: "лет в медицине" },
+                  { num: "45", label: "лет в медицине" },
                   { num: "ДВ", label: "Дальний Восток" },
                   { num: "1", label: "книга" },
                 ].map(stat => (
