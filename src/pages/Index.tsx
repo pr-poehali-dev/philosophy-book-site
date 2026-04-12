@@ -361,15 +361,19 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { store: "ЛитРес", format: "Электронная + аудио", price: "349 ₽", icon: "Tablet" },
-              { store: "Ozon", format: "Печатная книга", price: "590 ₽", icon: "Package" },
-              { store: "Wildberries", format: "Печатная книга", price: "610 ₽", icon: "ShoppingBag" },
-              { store: "Читай-город", format: "Печатная книга", price: "620 ₽", icon: "BookOpen" },
-              { store: "Издательство", format: "Прямой заказ + подпись", price: "700 ₽", icon: "Star" },
-              { store: "Библио-Глобус", format: "Печатная книга", price: "590 ₽", icon: "Library" },
+              { store: "ЛитРес", format: "Электронная + аудио", price: "349 ₽", icon: "Tablet", url: null },
+              { store: "Ozon", format: "Печатная книга", price: "590 ₽", icon: "Package", url: null },
+              { store: "Wildberries", format: "Печатная книга", price: "610 ₽", icon: "ShoppingBag", url: null },
+              { store: "Яндекс Маркет", format: "Печатная книга", price: null, icon: "ShoppingCart", url: null },
+              { store: "Читай-город", format: "Печатная книга", price: "620 ₽", icon: "BookOpen", url: null },
+              { store: "Библио-Глобус", format: "Печатная книга", price: "590 ₽", icon: "Library", url: null },
+              { store: "Ридеро", format: "Электронная + печатная", price: null, icon: "Star", url: "https://ridero.ru/books/zagadka_bow_kod_mirozdaniya/" },
             ].map((item, i) => (
-              <button
+              <a
                 key={i}
+                href={item.url ?? "#buy"}
+                target={item.url ? "_blank" : undefined}
+                rel={item.url ? "noopener noreferrer" : undefined}
                 className="flex items-center gap-4 p-6 border border-border/60 hover:border-gold/40 transition-colors duration-300 text-left group"
               >
                 <div className="p-3 bg-muted border border-border/60 group-hover:border-gold/30 transition-colors">
@@ -379,8 +383,8 @@ export default function Index() {
                   <p className="font-cormorant text-lg text-foreground">{item.store}</p>
                   <p className="font-ibm text-xs text-muted-foreground">{item.format}</p>
                 </div>
-                <p className="font-ibm text-sm text-gold font-medium">{item.price}</p>
-              </button>
+                {item.price && <p className="font-ibm text-sm text-gold font-medium">{item.price}</p>}
+              </a>
             ))}
           </div>
         </div>
