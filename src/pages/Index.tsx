@@ -347,6 +347,17 @@ export default function Index() {
             <h2 className="font-cormorant text-4xl md:text-5xl font-light text-foreground">
               Книга доступна везде
             </h2>
+            <p className="font-ibm text-sm text-muted-foreground mt-4 max-w-xl mx-auto">
+              Книга доступна на всех маркетплейсах России и на сервисе издательства{" "}
+              <a
+                href="https://ridero.ru/books/zagadka_bow_kod_mirozdaniya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold hover:underline"
+              >
+                Ридеро
+              </a>
+            </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
