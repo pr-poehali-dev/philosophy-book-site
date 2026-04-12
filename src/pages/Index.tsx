@@ -345,10 +345,10 @@ export default function Index() {
           <div className="text-center mb-16">
             <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">Где купить</p>
             <h2 className="font-cormorant text-4xl md:text-5xl font-light text-foreground">
-              Книга доступна везде
+              Книга доступна
             </h2>
             <p className="font-ibm text-sm text-muted-foreground mt-4 max-w-xl mx-auto">
-              Книга доступна на всех маркетплейсах России и на сервисе издательства{" "}
+              на маркетплейсах и на сервисе издательства{" "}
               <a
                 href="https://ridero.ru/books/zagadka_bow_kod_mirozdaniya/"
                 target="_blank"
@@ -361,19 +361,21 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { store: "ЛитРес", format: "Электронная + аудио", price: "349 ₽", icon: "Tablet", url: null },
-              { store: "Ozon", format: "Печатная книга", price: "590 ₽", icon: "Package", url: null },
-              { store: "Wildberries", format: "Печатная книга", price: "610 ₽", icon: "ShoppingBag", url: null },
-              { store: "Яндекс Маркет", format: "Печатная книга", price: null, icon: "ShoppingCart", url: null },
-              { store: "Читай-город", format: "Печатная книга", price: "620 ₽", icon: "BookOpen", url: null },
-              { store: "Библио-Глобус", format: "Печатная книга", price: "590 ₽", icon: "Library", url: null },
-              { store: "Ридеро", format: "Электронная + печатная", price: null, icon: "Star", url: "https://ridero.ru/books/zagadka_bow_kod_mirozdaniya/" },
+              { store: "ЛитРес", format: "Электронная + аудио", icon: "Tablet", url: "https://www.litres.ru/book/mihail-genrihovich-cinkler/zagadka-bow-kod-mirozdaniya-71893390/" },
+              { store: "Ozon", format: "Печатная книга", icon: "Package", url: "https://www.ozon.ru/product/zagadka-bow-kod-mirozdaniya-2026930453/?__rr=1&sh=JyphtAzSxg" },
+              { store: "Wildberries", format: "Печатная книга", icon: "ShoppingBag", url: "https://www.wildberries.ru/catalog/390065838/detail.aspx" },
+              { store: "Яндекс Маркет", format: "Печатная книга", icon: "ShoppingCart", url: null },
+              { store: "Читай-город", format: "Печатная книга", icon: "BookOpen", url: null },
+              { store: "Библио-Глобус", format: "Печатная книга", icon: "Library", url: null },
+              { store: "Ридеро", format: "Электронная + печатная", icon: "Star", url: "https://ridero.ru/books/zagadka_bow_kod_mirozdaniya/" },
+              { store: "Amazon", format: "Электронная книга", icon: "Globe", url: "https://www.amazon.com/Загадка-BOW-Код-мироздания-Russian-ebook/dp/B0F546JMVV" },
+              { store: "Строки", format: "Электронная книга", icon: "FileText", url: "https://stroki.mts.ru/book/zagadka-bow-kod-mirozdaniya-311835" },
             ].map((item, i) => (
               <a
                 key={i}
                 href={item.url ?? "#buy"}
-                target={item.url ? "_blank" : undefined}
-                rel={item.url ? "noopener noreferrer" : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 p-6 border border-border/60 hover:border-gold/40 transition-colors duration-300 text-left group"
               >
                 <div className="p-3 bg-muted border border-border/60 group-hover:border-gold/30 transition-colors">
@@ -383,7 +385,6 @@ export default function Index() {
                   <p className="font-cormorant text-lg text-foreground">{item.store}</p>
                   <p className="font-ibm text-xs text-muted-foreground">{item.format}</p>
                 </div>
-                {item.price && <p className="font-ibm text-sm text-gold font-medium">{item.price}</p>}
               </a>
             ))}
           </div>
