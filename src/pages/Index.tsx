@@ -365,8 +365,6 @@ export default function Index() {
               { store: "Ozon", format: "Печатная книга", icon: "Package", url: "https://www.ozon.ru/product/zagadka-bow-kod-mirozdaniya-2026930453/?__rr=1&sh=JyphtAzSxg" },
               { store: "Wildberries", format: "Печатная книга", icon: "ShoppingBag", url: "https://www.wildberries.ru/catalog/390065838/detail.aspx" },
               { store: "Яндекс Маркет", format: "Печатная книга", icon: "ShoppingCart", url: null },
-              { store: "Читай-город", format: "Печатная книга", icon: "BookOpen", url: null },
-              { store: "Библио-Глобус", format: "Печатная книга", icon: "Library", url: null },
               { store: "Ридеро", format: "Электронная + печатная", icon: "Star", url: "https://ridero.ru/books/zagadka_bow_kod_mirozdaniya/" },
               { store: "Amazon", format: "Электронная книга", icon: "Globe", url: "https://www.amazon.com/Загадка-BOW-Код-мироздания-Russian-ebook/dp/B0F546JMVV" },
               { store: "Строки", format: "Электронная книга", icon: "FileText", url: "https://stroki.mts.ru/book/zagadka-bow-kod-mirozdaniya-311835" },
