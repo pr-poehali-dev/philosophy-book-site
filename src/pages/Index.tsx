@@ -149,7 +149,7 @@ export default function Index() {
           <div className="space-y-8">
             <div className="opacity-0 animate-fade-in delay-100" style={{ animationFillMode: "forwards" }}>
               <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-4">
-                Книга Михаила Цинклера
+                Сайт о книге Михаила Цинклера
               </p>
               <h1 className="font-cormorant text-5xl md:text-7xl font-light leading-tight text-foreground">
                 Загадка BOW.<br />
