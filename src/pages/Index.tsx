@@ -40,6 +40,7 @@ const galleryItems = [
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/3506cc26-917e-4f04-891b-ff6fe1622e92.jpg", caption: "Работа врача-реаниматолога" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/8cbfc03d-47c6-486c-8d64-92ed9b55e420.jpg", caption: "На Кавказе" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/3fcb092b-24ee-44e8-9741-f22ee3d35e29.jpg", caption: "С женой в Калининградском ресторане" },
+  { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/feadda5d-f50d-4f87-9133-65119674d841.jpg", caption: "В Севастополе" },
   { type: "video", src: "https://rutube.ru/play/embed/0b6254d583712a8c59fa8480c37e5d45/", caption: "Видео на Rutube" },
   { type: "video", src: "https://rutube.ru/play/embed/277f05efe41ca9688167263fb2e9709f/", caption: "Видео на Rutube" },
 ];
