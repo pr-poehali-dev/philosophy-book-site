@@ -148,7 +148,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-6 pt-24 pb-16 grid md:grid-cols-2 gap-16 items-center w-full">
           <div className="space-y-8">
             <div className="opacity-0 animate-fade-in delay-100" style={{ animationFillMode: "forwards" }}>
-              <p className="font-ibm text-xs uppercase tracking-[0.3em] text-gold/70 mb-4">
+              <p className="font-ibm text-sm uppercase tracking-[0.3em] text-gold/70 mb-4">
                 Сайт о книге Михаила Цинклера
               </p>
               <h1 className="font-cormorant text-5xl md:text-7xl font-light leading-tight text-foreground">
