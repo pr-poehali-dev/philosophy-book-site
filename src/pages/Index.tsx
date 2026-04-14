@@ -44,6 +44,7 @@ const galleryItems = [
   { type: "video", src: "https://rutube.ru/play/embed/0b6254d583712a8c59fa8480c37e5d45/", caption: "Видео на Rutube" },
   { type: "video", src: "https://rutube.ru/play/embed/277f05efe41ca9688167263fb2e9709f/", caption: "Видео на Rutube" },
   { type: "video", src: "https://rutube.ru/play/embed/c42244b1f73aad90d9a659228e7ba253/", caption: "Видео на Rutube" },
+  { type: "video", src: "https://rutube.ru/play/embed/ef4325e9d067b8ccefb33dd96215aae4/", caption: "Видео на Rutube" },
 ];
 
 const reviews = [
