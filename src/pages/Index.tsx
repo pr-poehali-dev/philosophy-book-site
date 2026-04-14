@@ -11,6 +11,7 @@ const navLinks = [
   { href: "#buy", label: "Купить" },
   { href: "#reviews", label: "Отзывы" },
   { href: "#faq", label: "Вопросы" },
+  { href: "#social", label: "Соцсети" },
 ];
 
 const news = [
@@ -454,7 +455,7 @@ export default function Index() {
       </section>
 
       {/* SOCIAL */}
-      <section className="py-14 bg-card/40">
+      <section id="social" className="py-14 bg-card/40">
         <div className="max-w-6xl mx-auto px-6">
           <div className="section-divider mb-16" />
           <div className="text-center mb-12">
@@ -465,13 +466,15 @@ export default function Index() {
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              { name: "Telegram", icon: "Send", desc: "Канал автора" },
-              { name: "ВКонтакте", icon: "Users", desc: "Сообщество" },
-              { name: "YouTube", icon: "Youtube", desc: "Лекции и интервью" },
-              { name: "Instagram", icon: "Instagram", desc: "Фото и заметки" },
+              { name: "ВКонтакте", icon: "Users", desc: "Сообщество", url: "https://vk.com/planet5elements56" },
+              { name: "Одноклассники", icon: "UserCircle", desc: "Профиль автора", url: "https://ok.ru/profile/910120256596" },
+              { name: "Rutube", icon: "Play", desc: "Лекции и интервью", url: "https://rutube.ru/channel/49118191/" },
             ].map((social, i) => (
-              <button
+              <a
                 key={i}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 px-8 py-5 border border-border/60 hover:border-gold/40 transition-colors duration-300 group min-w-[200px]"
               >
                 <Icon name={social.icon} size={20} className="text-gold/60 group-hover:text-gold transition-colors" />
@@ -479,7 +482,7 @@ export default function Index() {
                   <p className="font-ibm text-sm text-foreground">{social.name}</p>
                   <p className="font-ibm text-xs text-muted-foreground">{social.desc}</p>
                 </div>
-              </button>
+              </a>
             ))}
           </div>
         </div>
