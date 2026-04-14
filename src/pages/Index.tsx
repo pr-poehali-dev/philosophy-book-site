@@ -36,6 +36,7 @@ const galleryItems = [
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/13e63314-7cf6-4339-971d-ad92c7e76a72.jpg", caption: "Михаил Цинклер с книгой" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/79ae929b-c7a2-4fe4-8676-e06d1a25c0ec.jpg", caption: "Самара" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/e56279d9-53cf-421d-93eb-ce860dd9b764.jpg", caption: "Херсонес" },
+  { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/a69f97f1-0e10-48ae-9731-dbaad46a5bac.JPG", caption: "В операционной" },
   { type: "image", src: "https://cdn.poehali.dev/projects/36db464f-ef39-46e0-90d7-12427b8c4033/bucket/8cbfc03d-47c6-486c-8d64-92ed9b55e420.jpg", caption: "На Кавказе" },
   { type: "video", src: "https://rutube.ru/play/embed/0b6254d583712a8c59fa8480c37e5d45/", caption: "Видео на Rutube" },
   { type: "video", src: "https://rutube.ru/play/embed/277f05efe41ca9688167263fb2e9709f/", caption: "Видео на Rutube" },
